@@ -8,5 +8,5 @@ module fulladder(x, y, cin, sum, cout);
     output sum, cout;
 
     assign sum = (x ^ y) ^ cin;
-    assign cout = ((x ^ y) & cin) || (x & y) ;
+    assign cout = ((x ^ y) & cin) | (x & y) ;
 endmodule
